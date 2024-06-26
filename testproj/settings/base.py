@@ -8,7 +8,7 @@ from testproj.util import static_lazy
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 ALLOWED_HOSTS = [
-    "*",
+    "apishowcase.onrender.com",
     '127.0.0.1',
     'localhost',
     'test.local',
