@@ -15,6 +15,8 @@ DATABASES = {
 }
 
 # Quick-start development settings - unsuitable for production
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+MIDDLEWARE.insert(0, 'whitenoise.middleware.WhiteNoiseMiddleware')
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # cspell:disable-next-line
